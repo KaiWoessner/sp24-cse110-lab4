@@ -40,4 +40,6 @@
 14F. true. The Boolean function `Boolean(2)` is equivalent to true, therefore the `===` operator compares if 'true===true' which is true.
   
 15. The difference between `==` and `===` is that the `==` operator first tries to convert the types of each operand to be the same before comparison the values while the `===` operator compares each operand as-is without converting the types. This means that `2=='2'` is true while `2==='2'` is false.
+**Functions**  
+17. The function will return: `[2,4,6]`. This is because the initial `modifyArray` takes in the value `[1,2,3]` (array) and the function `doSomething` (callback). Each iteration of the for loop pushes a new value to `newArr`. The new value is obtained by running the individual elements in the array into the callback function `doSomething`. Since `doSomething`, doubles the element, the returned `newArr` is `[2,4,6]`.
 

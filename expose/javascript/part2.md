@@ -1,5 +1,5 @@
 ## Part 2
-### Variables and Scope continued
+### Variables and Scoping continued
 1. Since `i` is declared with `var`, it still exists outside of the `for` loop scope and therefore line 12 will print: 3
 2. Since `discountedPrice` is declared with `var`, it still exists outside of the `for` loop scope (updating `discountedPrice` each iteration) and therefore line 13 will print: 150
 3. Since `finalPrice` is declared with `var`, it exists outside and inside of the `for` loop scope and is updated each iteration. Therefore line 14 will print: 150
@@ -20,5 +20,24 @@
 12D. student["Favorite Teacher"].name
 12E. student.courseLoad[0]
 
+### Basic Operators and Type Conversion
+**Arithmetic**  
+13A. '32'. This is because the `+` acts as a string concatenation, converts the `2` to a string, and concatenates the two strings.  
+13B. 1. This is because the `-` is used arithmetically as a subtraction sign and converts the string `'3'` to an integer and performs the operation `3-2=1`  
+13C. 3. The `+` acts as an addition operator and `null` is assigned the value of 0. So `3+0=3`  
+13D. '3null'. The `+` acts as a string concatenation and converts `null` to the string `'null'`.  
+13E. 4. The `+` acts as an addition operator and `true` is converted to its equivalent numeric value of 1. So `1+3=4`.  
+13F. 0. The `+` acts as an addition operator so `false` is converted to its equivalent numeric value of 0 and `null` is converted to 0. So `0+0=0`.  
+13G. '3undefined'. The `+` acts as a string concatenation, converts `undefined` to the string `'undefined'` and concatenates the two strings.  
+13H. NaN. The `-` acts as a subtraction operator so `undefined` is converted to `NaN` (not a number) because it does not have an equivalent integer value. This leads to `3-NaN=NaN`.  
+  
+**Comparison**  
+14A. true. The string `'2'` is converted to the integer 2 (because the other operand is a number) and since `2>1` it is true.  
+14B. false. Since `'2'` and `'12'` are strings, the strings are compared lexographically. Because `1` is less than `2`, `'12'` is less than `'2'` and the comparison evaluates to false.  
+14C. true. The `==` operator converts the string `'2'` to the number 2 (because the other operand is a number) and compares `2==2` which is true.  
+14D. false. The `===` operator performs the comparison without converting types. Therefore `'2'===2` is false.  
+14E. false. The `==` operator first converts `true` to its numeric equivalent of 1 (becuase the other operand is a number). Therefore `1==2` is false.  
+14F. true. The Boolean function `Boolean(2)` is equivalent to true, therefore the `===` operator compares if 'true===true' which is true.
+  
+15. The difference between `==` and `===` is that the `==` operator first tries to convert the types of each operand to be the same before comparison the values while the `===` operator compares each operand as-is without converting the types. This means that `2=='2'` is true while `2==='2'` is false.
 
-13.

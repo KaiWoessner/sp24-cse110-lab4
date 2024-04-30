@@ -1,4 +1,5 @@
-### Part1
+## Part1
+### Variables and Scoping
 1. At line 9, the code prints: values added:  20
 2. At line 13, the code prints: final result:  20
 3. At line 9, the code prints: values added:  20

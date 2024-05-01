@@ -14,11 +14,11 @@
 10. Since there are 3 variables in `prices`, `length` is never reassigned, and `length` is declared in the main block, line 12 will print: 3
 11. Since `discounted` is a list that is appended to for each price (due to the `for` loop and `push`) and none of the `const` variables 'discounted','length', and 'discountedPrice' are updated, the function will return the list: [50, 100, 150].
 ### Data Types
-12A. student.name
-12B. student["Grad Year"]
-12C. student.greeting()
-12D. student["Favorite Teacher"].name
-12E. student.courseLoad[0]
+12A. student.name  
+12B. student["Grad Year"]  
+12C. student.greeting()  
+12D. student["Favorite Teacher"].name  
+12E. student.courseLoad[0]  
 
 ### Basic Operators and Type Conversion
 **Arithmetic**  
